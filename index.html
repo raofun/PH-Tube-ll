@@ -8,16 +8,16 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <nav class="w-11/12 mx-auto py-3 border-b  flex justify-between items-center">
+        <nav class="mx-auto py-3 border-b flex justify-between items-center w-11/12">
             <div class="logo w-[120px]">
                 <img src="assets/Logo.png" alt="Logo of ph tube">
             </div>
-            <div class="search">
+            <div class="w-[100px] md:w-1/2 lg:w-1/2">
                 <label class="input input-bordered flex items-center ">
                     <input type="text" class="grow" placeholder="Search" />
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
@@ -29,13 +29,19 @@
                 </label>
             </div>
             <div class="sort">
-                <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">Sort</button>
+                <button class="btn btn-xs bg-red-400 sm:btn-sm md:btn-md lg:btn-lg">Sort</button>
             </div>
-
-
-
         </nav>
     </header>
+
+    <nav id="categories" class="py-3 flex gap-5 justify-center"></nav>
+
+    <main>
+        <section id="videos" class="w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 py-10">
+            
+        </section>
+    </main>
+<script src="script/category.js"></script>    
 </body>
 
 </html>
